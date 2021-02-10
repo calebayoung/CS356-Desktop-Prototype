@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS356 Desktop Prototype</title>
+    <link rel="icon" type="image/png" href="https://brand-dev.byu.edu/wp-content/uploads/2017/01/cropped-PAM_favicon-32x32.png"/>
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <span class="navbar-brand mb-0 h1">myBYU</span>
+                <div class="d-flex align-items-center">
+                    <form class="d-flex">
+                        <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                    <button type="button" class="btn btn-link">
+                        <img src="icons/user-circle-regular.svg" height="24">
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="container mybyu-grid__wrapper">
+            <div class="mybyu-grid">
+                <div class="mybyu-grid__aside">
+                    
+                </div>
+                <div class="mybyu-grid__main">
+                    <ul class="nav nav-tabs nav-fill">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Academic</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Campus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Financial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">On-Campus Work</a>
+                        </li>
+                    </ul>
+                    <div class="mybyu-grid__tab-container">
+                        <div class="card" style="width: 18rem;">
+                            <img src="images/campus.jpg" class="card-img-top" alt="Aerial view of campus">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="images/campus.jpg" class="card-img-top" alt="Aerial view of campus">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

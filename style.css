@@ -1,0 +1,115 @@
+:root {
+
+	/* Primary */
+	--byu-navy: #002e5d;
+	--byu-white: #fff;
+
+	/* Secondary */
+	--byu-royal: #0062b8;
+	--byu-royal-medium: #5199e1;
+	--byu-royal-light: #afd6fe;
+
+	/* Greys */
+	--byu-grey-darkest: #141414;
+	--byu-grey-dark: #666;
+	--byu-grey-medium-dark: #8f8f8f;
+	--byu-grey-medium: #c5c5c5;
+	--byu-grey-medium-light: #e6e6e6;
+	--byu-grey-light: #f4f4f4;
+    --byu-grey-lightest: #fafafa;
+
+	/* Fonts */
+	--ringside-ssm: "HCo Ringside Narrow SSm", "Arial", sans-serif;
+	--public-sans: "Public Sans", "Arial", sans-serif;
+	--open-sans: "Open Sans", "Arial", sans-serif;
+}
+
+@font-face {
+	font-family: "HCo Ringside Narrow SSm";
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src:
+		local("HCo Ringside Narrow SSm Book"),
+		local("Ringside Narrow SSm Book"),
+		url(https://pg-core.byu.edu/wp-content/themes/pg-core/fonts/ringside-ssm/RingsideNarrowSSm-Book.woff2) format("woff2"),
+		url(https://pg-core.byu.edu/wp-content/themes/pg-core/fonts/ringside-ssm/RingsideNarrowSSm-Book.woff) format("woff"),
+		url(https://pg-core.byu.edu/wp-content/themes/pg-core/fonts/ringside-ssm/RingsideNarrowSSm-Book.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "HCo Ringside Narrow SSm";
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	src:
+		local("HCo Ringside Narrow SSm Bold"),
+		local("Ringside Narrow SSm Bold"),
+		url(https://pg-core.byu.edu/wp-content/themes/pg-core/fonts/ringside-ssm/RingsideNarrowSSm-Bold.woff2) format("woff2"),
+		url(https://pg-core.byu.edu/wp-content/themes/pg-core/fonts/ringside-ssm/RingsideNarrowSSm-Bold.woff) format("woff"),
+		url(https://pg-core.byu.edu/wp-content/themes/pg-core/fonts/ringside-ssm/RingsideNarrowSSm-Bold.ttf) format("truetype");
+}
+
+html {
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+body {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+    height: 100%;
+    background-color: var(--byu-grey-light) !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-dark {
+    background-color: var(--byu-navy) !important;
+}
+
+.navbar-brand {
+    font-family: var(--ringside-ssm);
+    font-weight: 700;
+}
+
+#search {
+  height: 30px;
+}
+
+.mybyu-grid__wrapper {
+    display: flex;
+    flex-grow: 1;
+}
+
+.mybyu-grid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20rem auto;
+}
+
+.mybyu-grid__aside {
+    
+}
+
+.mybyu-grid__main {
+    padding: 3rem 0 2rem;
+}
+
+.mybyu-grid__tab-container {
+    height: calc(100% - 4rem);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: flex-start;
+    background-color: #fff;
+    border-left: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+}
