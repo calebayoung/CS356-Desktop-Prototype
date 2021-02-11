@@ -95,8 +95,145 @@ main {
 }
 
 .mybyu-grid__aside {
-    
+    padding: 3rem 0 2rem;
 }
+
+.widget {
+	padding: 2rem 1rem;
+	background-color: #fff;
+	border: 1px solid #dee2e6;
+	border-radius: .75rem;
+}
+
+/* ---------- CALENDAR ---------- */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	cursor: pointer;
+	margin: auto;
+}
+
+.calendar {
+	margin: 1rem 1rem 0 0;
+}
+
+.calendar header {
+	position: relative;
+	text-align: center;
+	margin-bottom: .5rem;
+}
+
+.calendar h2 {
+	margin-bottom: 0;
+	font-size: large;
+}
+
+.calendar tbody {
+	color: #7c8a95;
+}
+
+.calendar tbody td:hover {
+	border: 2px solid var(--byu-navy);
+}
+
+.calendar td {
+	border: 2px solid transparent;
+	border-radius: 50%;
+	display: inline-block;
+	height: 2em;
+	text-align: center;
+	width: 2em;
+}
+
+.calendar .prev-month,
+.calendar .next-month {
+	color: #cbd1d2;
+}
+
+.calendar .prev-month:hover,
+.calendar .next-month:hover {
+	border: 2px solid #cbd1d2;
+}
+
+.current-day {
+	background: var(--byu-navy);
+	color: #f9f9f9;
+}
+
+.btn-prev,
+.btn-next {
+	border: 2px solid #cbd1d2;
+	border-radius: 50%;
+	color: #cbd1d2;
+	height: 2em;
+	font-size: .75em;
+	line-height: 2em;
+	margin: -1em;
+	position: absolute;
+	top: 50%;
+	width: 2em;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+	background: #cbd1d2;
+	color: #f9f9f9;
+}
+
+.btn-prev {
+	left: 6em;
+}
+
+.btn-next {
+	right: 6em;
+}
+
+.event-list-header {
+	border-bottom: 1px solid var(--byu-grey-medium-dark);
+	margin: 1rem 0 .75rem;
+}
+
+.event {
+	display: flex;
+	margin-bottom: .75rem;
+}
+
+.event-date {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: var(--byu-grey-light);
+	border: 1px solid var(--byu-grey-medium-light);
+	border-radius: .25rem;
+	margin-right: .75rem;
+}
+
+.event-date div {
+	text-align: center;
+	margin: -0.1rem 0;
+}
+
+.day-of-week {
+	color: var(--byu-grey-darkest);
+}
+
+.date {
+	color: var(--byu-navy);
+	font-weight: bold;
+	font-size: 1.25rem;
+}
+
+.time {
+	color: var(--byu-grey-darkest);
+}
+
+.event-description {
+	padding: 1rem 0;
+}
+
+/* ------- END OF CALENDAR ------- */
 
 .mybyu-grid__main {
     padding: 3rem 0 2rem;
