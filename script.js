@@ -15,4 +15,8 @@ jQuery( $ => {
         });
     });
 
+    $('.card').on('click', function() {
+        console.log('Navigation logic here . . .');
+    });
+
 });

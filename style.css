@@ -136,6 +136,26 @@ main {
 
 .card {
 	height: 100%;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.card picture {
+    display: flex;
+    height: 100%;
+    max-height: 190px;
+    overflow: hidden;
+}
+
+.card picture img {
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
 }
 
 .card-title {
@@ -154,6 +174,11 @@ main {
 
 .btn-primary:hover {
 	background-color: var(--byu-royal);
+}
+
+.btn-primary img {
+    margin-left: 5px;
+    margin-bottom: 2px;
 }
 
 @media (min-width: 1400px) {
