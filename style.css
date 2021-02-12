@@ -149,7 +149,7 @@ main {
 }
 
 .mybyu-grid__aside {
-    padding: 3rem 0 2rem;
+    padding: 3rem 0 0;
 }
 
 .widget {
@@ -356,8 +356,8 @@ table {
 
 .mybyu-grid__main {
 	height: 100%;
-	max-height: 915px;
-    padding: 3rem 0 2rem;
+	max-height: 883px;
+    padding: 3rem 0 0;
 }
 
 .mybyu-grid__main .nav-link {
