@@ -58,7 +58,7 @@ jQuery( $ => {
     };
 
     $('#search').on('keyup', function() {
-        $('.dropdown-menu').addClass('hidden').empty();
+        $('#search-dropdown').addClass('hidden').empty();
         runSearch();
     });
 
@@ -66,14 +66,18 @@ jQuery( $ => {
         runSearch();
     });
 
-    $('#search').on('focusout', function() {
-        console.log('Happened');
-        $('.dropdown-menu').addClass('hidden').empty();
+    $('#user-button').on('click', function() {
+        $('#user-dropdown').toggleClass('hidden');
+    });
+
+    $('.mybyu-grid').on('click', function() {
+        $('#search-dropdown').addClass('hidden').empty();
+        $('#user-dropdown').addClass('hidden');
     });
 
     function runSearch() {
         const currentSearchVal = $('#search').val().toLowerCase().replace(' ', '').replace('-', '').replace('&', 'and');
-        if (2 < currentSearchVal.length) {
+        if (1 < currentSearchVal.length) {
             let possibleMatches = [];
             const keys = Object.keys(searchTerms);
             keys.forEach(key => {
@@ -82,9 +86,9 @@ jQuery( $ => {
                 }
             });
             if (0 < possibleMatches.length) {
-                $('.dropdown-menu').removeClass('hidden');
+                $('#search-dropdown').removeClass('hidden');
                 possibleMatches.forEach(possibleMatch => {
-                    $('.dropdown-menu').append(`<li><a class="dropdown-item" href="#">${possibleMatch}</a></li>`);
+                    $('#search-dropdown').append(`<li><a class="dropdown-item" href="#">${possibleMatch}</a></li>`);
                 });
             }
         }

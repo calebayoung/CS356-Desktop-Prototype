@@ -82,18 +82,40 @@ main {
 
 #search {
   height: 30px;
+  font-family: var(--public-sans);
 }
 
-.dropdown-menu {
+#search-dropdown {
 	width: 100%;
-	max-width: 194px;
+	max-width: 212px;
 	display: flex;
 	flex-direction: column;
 	position: absolute;
 	top: 27px;
 }
 
+#user-dropdown {
+	width: 100%;
+	max-width: 194px;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 45px;
+	left: 149px;
+}
+
+#user-dropdown:before {
+    content:"\A";
+    border-style: solid;
+    border-width: 11px;
+    border-color: transparent transparent #ffffff transparent;
+    position: absolute;
+    left: 84px;
+	top: -22px
+}
+
 .dropdown-item {
+	font-family: var(--public-sans);
 	white-space: normal;
 }
 

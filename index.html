@@ -15,14 +15,22 @@
         <nav class="navbar navbar-dark bg-dark">
             <div class="container">
                 <span class="navbar-brand mb-0 h1">myBYU</span>
-                <div class="d-flex align-items-center">
-                    <form class="d-flex" style="position: relative;">
+                <div class="d-flex align-items-center" style="position: relative;">
+                    <form id="search-form" class="d-flex" style="position: relative;">
                         <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" autocomplete="off">
-                        <ul class="dropdown-menu hidden" aria-labelledby="dropdownMenuButton1"></ul>
+                        <ul id="search-dropdown" class="dropdown-menu hidden"></ul>
                     </form>
-                    <button type="button" class="btn btn-link">
+                    <button type="button" id="user-button" class="btn btn-link shadow-none">
                         <img src="icons/user-circle-regular.svg" height="24">
                     </button>
+                    <ul id="user-dropdown" class="dropdown-menu shadow hidden">
+                        <li><a class="dropdown-item" href="#">Account Management</a></li>
+                        <li><a class="dropdown-item" href="#">Update Personal Information</a></li>
+                        <li><a class="dropdown-item" href="#">Change Password & Security Question</a></li>
+                        <li><a class="dropdown-item" href="#">Ecclesiastical Endorsements</a></li>
+                        <li><a class="dropdown-item" href="#">Email Alias Manager</a></li>
+                        <li><a class="dropdown-item" href="#">Account Guest Access</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
