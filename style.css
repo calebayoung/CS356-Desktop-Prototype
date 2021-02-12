@@ -45,7 +45,14 @@
 		url(fonts/RingsideNarrowSSm-Bold.ttf) format("truetype");
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+@font-face {
+	font-family: "Public Sans";
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src:
+		url(fonts/PublicSans-Regular.ttf) format("ttf");
+}
 
 html {
     height: 100%;
