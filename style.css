@@ -97,6 +97,10 @@ main {
 	white-space: normal;
 }
 
+.dropdown-item:active {
+	background-color: var(--byu-royal);
+}
+
 .mybyu-grid__wrapper {
     display: flex;
     flex-grow: 1;
@@ -130,6 +134,8 @@ table {
 }
 
 .calendar {
+	font-family:  var(--public-sans);
+	border-radius: 0.25rem;
 	margin: 0 1rem 0 0;
 }
 
@@ -159,6 +165,7 @@ table {
 	height: 2em;
 	text-align: center;
 	width: 2em;
+	padding-top: 3px;
 }
 
 .calendar .prev-month,
@@ -188,6 +195,7 @@ table {
 	position: absolute;
 	top: 50%;
 	width: 2em;
+	cursor: pointer;
 }
 
 .btn-prev:hover,

@@ -59,7 +59,20 @@ jQuery( $ => {
 
     $('#search').on('keyup', function() {
         $('.dropdown-menu').addClass('hidden').empty();
-        const currentSearchVal = $(this).val().toLowerCase().replace(' ', '').replace('-', '').replace('&', 'and');
+        runSearch();
+    });
+
+    $('#search').on('focusin', function() {
+        runSearch();
+    });
+
+    $('#search').on('focusout', function() {
+        console.log('Happened');
+        $('.dropdown-menu').addClass('hidden').empty();
+    });
+
+    function runSearch() {
+        const currentSearchVal = $('#search').val().toLowerCase().replace(' ', '').replace('-', '').replace('&', 'and');
         if (2 < currentSearchVal.length) {
             let possibleMatches = [];
             const keys = Object.keys(searchTerms);
@@ -75,6 +88,6 @@ jQuery( $ => {
                 });
             }
         }
-    });
+    }
 
 });
