@@ -354,7 +354,8 @@ table {
 /* ------- END OF YMESSAGE ------- */
 
 .mybyu-grid__main {
-	max-height: 93vh;
+	height: 100%;
+	max-height: 931px;
     padding: 3rem 0 2rem;
 }
 
