@@ -66,6 +66,11 @@ main {
     flex-direction: column;
 }
 
+.mobile-warning {
+	display: none;
+	visibility: none;
+}
+
 .hidden {
 	display: none !important;
 	visibility: hidden !important;
@@ -97,8 +102,9 @@ main {
 #user-dropdown {
 	width: 100%;
 	max-width: 194px;
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-auto-flow: rows;
+	grid-row-gap: 0.5rem;
 	position: absolute;
 	top: 45px;
 	left: 149px;
@@ -111,7 +117,7 @@ main {
     border-color: transparent transparent #ffffff transparent;
     position: absolute;
     left: 84px;
-	top: -22px
+	top: -21px
 }
 
 .dropdown-item {
@@ -143,7 +149,7 @@ main {
 	padding: 1.5rem 1rem;
 	background-color: #fff;
 	border: 1px solid #dee2e6;
-	border-radius: .75rem;
+	border-radius: .25rem;
 }
 
 /* ---------- CALENDAR ---------- */
@@ -157,7 +163,6 @@ table {
 
 .calendar {
 	font-family:  var(--public-sans);
-	border-radius: 0.25rem;
 	margin: 0 1rem 0 0;
 }
 
@@ -280,6 +285,67 @@ table {
 
 /* ------- END OF CALENDAR ------- */
 
+/* ---------- YMESSAGE ---------- */
+
+.ymessage {
+	display: grid;
+	grid-auto-flow: row;
+	grid-row-gap: 0.5rem;
+	font-family:  var(--public-sans);
+	padding: 1.5rem 1rem 0.8rem;
+	margin: 1rem 1rem 0 0;
+}
+
+.ymessage h5 {
+	font-size: large;
+	text-align: center;
+}
+
+.ymessage__message {
+	display: grid;
+	grid-template-columns: min-content auto;
+	grid-column-gap: 1rem;
+	cursor: pointer;
+	border-radius: 0.25rem;
+	padding: 0.5rem 0;
+	transition: background-color 0.1s ease-in-out;
+}
+
+.ymessage__message:hover {
+	background-color: var(--byu-grey-light);
+}
+
+.ymessage__message img {
+	margin-left: 0.5rem;
+}
+
+.ymessage__message p {
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;  
+	overflow: hidden;
+	margin: 0;
+}
+
+.ymessage__link {
+	font-size: 14px;
+	font-style: italic;
+	text-align: right;
+	margin: 0.5rem 0 0;
+}
+
+.ymessage__link a {
+	color: var(--byu-royal);
+	text-decoration: none;
+}
+
+.ymessage__link a:hover {
+	color: var(--bs-blue);
+	text-decoration: underline;
+}
+
+/* ------- END OF YMESSAGE ------- */
+
 .mybyu-grid__main {
 	max-height: 93vh;
     padding: 3rem 0 2rem;
@@ -287,7 +353,7 @@ table {
 
 .mybyu-grid__main .nav-link {
 	font-family: var(--ringside-ssm);
-	color: var(--byu-royal);
+	color: var(--byu-navy);
 	cursor: pointer;
 }
 
@@ -299,6 +365,8 @@ table {
     border-bottom: 1px solid #dee2e6;
     border-right: 1px solid #dee2e6;
 	overflow-y: scroll;
+	border-bottom-left-radius: 0.25rem;
+	border-bottom-right-radius: 0.25rem;
 }
 
 .mybyu-grid__card-container {
@@ -334,6 +402,12 @@ table {
     object-fit: cover;
 }
 
+.card-body {
+	display: grid;
+	grid-template-rows: min-content auto min-content;
+	justify-items: flex-start;
+}
+
 .card-title {
 	font-family: var(--ringside-ssm);
 }
@@ -361,5 +435,26 @@ table {
 
 	.mybyu-grid__card-container {
 		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 1269px) {
+
+	main {
+		display: none;
+		visibility: none;
+	}
+
+	.mobile-warning {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		visibility: visible;
+	}
+
+	.mobile-warning h1 {
+		line-height: 2;
+		text-align: center;
 	}
 }
