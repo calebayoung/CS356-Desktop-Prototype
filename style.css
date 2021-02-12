@@ -29,8 +29,6 @@
 	font-style: normal;
 	font-display: swap;
 	src:
-		local("HCo Ringside Narrow SSm Book"),
-		local("Ringside Narrow SSm Book"),
 		url(fonts/RingsideNarrowSSm-Book.woff2) format("woff2"),
 		url(fonts/RingsideNarrowSSm-Book.woff) format("woff"),
 		url(fonts/RingsideNarrowSSm-Book.ttf) format("truetype");
@@ -42,8 +40,6 @@
 	font-style: normal;
 	font-display: swap;
 	src:
-		local("HCo Ringside Narrow SSm Bold"),
-		local("Ringside Narrow SSm Bold"),
 		url(fonts/RingsideNarrowSSm-Bold.woff2) format("woff2"),
 		url(fonts/RingsideNarrowSSm-Bold.woff) format("woff")
 		url(fonts/RingsideNarrowSSm-Bold.ttf) format("truetype");
