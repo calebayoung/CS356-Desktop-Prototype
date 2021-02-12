@@ -84,6 +84,19 @@ main {
   height: 30px;
 }
 
+.dropdown-menu {
+	width: 100%;
+	max-width: 194px;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 27px;
+}
+
+.dropdown-item {
+	white-space: normal;
+}
+
 .mybyu-grid__wrapper {
     display: flex;
     flex-grow: 1;
@@ -101,7 +114,7 @@ main {
 }
 
 .widget {
-	padding: 2rem 1rem;
+	padding: 1.5rem 1rem;
 	background-color: #fff;
 	border: 1px solid #dee2e6;
 	border-radius: .75rem;
@@ -117,7 +130,7 @@ table {
 }
 
 .calendar {
-	margin: 1rem 1rem 0 0;
+	margin: 0 1rem 0 0;
 }
 
 .calendar header {
