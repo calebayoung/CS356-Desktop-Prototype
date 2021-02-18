@@ -111,14 +111,13 @@ main {
 }
 
 #user-dropdown {
-	width: 100%;
-	max-width: 194px;
+	width: 235px;
 	display: grid;
-	grid-auto-flow: rows;
+	grid-auto-flow: row;
 	grid-row-gap: 0.5rem;
 	position: absolute;
 	top: 45px;
-	left: -68px;
+	left: -145px;
 }
 
 #user-dropdown:before {
@@ -127,7 +126,7 @@ main {
     border-width: 11px;
     border-color: transparent transparent #ffffff transparent;
     position: absolute;
-    left: 80px;
+    left: 157px;
 	top: -21px
 }
 
