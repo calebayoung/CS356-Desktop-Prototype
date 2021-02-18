@@ -20,17 +20,19 @@
                         <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" autocomplete="off">
                         <ul id="search-dropdown" class="dropdown-menu hidden"></ul>
                     </form>
-                    <button type="button" id="user-button" class="btn btn-link shadow-none">
-                        <img src="icons/user-circle-regular.svg" height="24">
-                    </button>
-                    <ul id="user-dropdown" class="dropdown-menu shadow hidden">
-                        <li><a class="dropdown-item" href="#">Account Management</a></li>
-                        <li><a class="dropdown-item" href="#">Update Personal Information</a></li>
-                        <li><a class="dropdown-item" href="#">Change Password & Security Question</a></li>
-                        <li><a class="dropdown-item" href="#">Ecclesiastical Endorsements</a></li>
-                        <li><a class="dropdown-item" href="#">Email Alias Manager</a></li>
-                        <li><a class="dropdown-item" href="#">Account Guest Access</a></li>
-                    </ul>
+                    <div class="dropdown-wrapper">
+                        <button type="button" id="user-button" class="btn btn-link shadow-none">
+                            <img src="icons/user-circle-regular.svg" height="24">
+                        </button>
+                        <ul id="user-dropdown" class="dropdown-menu shadow hidden">
+                            <li><a class="dropdown-item" href="#">Account Management</a></li>
+                            <li><a class="dropdown-item" href="#">Update Personal Information</a></li>
+                            <li><a class="dropdown-item" href="#">Change Password & Security Question</a></li>
+                            <li><a class="dropdown-item" href="#">Ecclesiastical Endorsements</a></li>
+                            <li><a class="dropdown-item" href="#">Email Alias Manager</a></li>
+                            <li><a class="dropdown-item" href="#">Account Guest Access</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -647,7 +649,7 @@
         </div>
     </main>
     <div class="mobile-warning">
-        <h1>This is a desktop project<br>Please view on a screen at least 1270px wide</h1>
+        <h1>This is a desktop project<br>Please view on a screen at least 1024px wide</h1>
     </div>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

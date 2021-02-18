@@ -106,6 +106,10 @@ main {
 	top: 27px;
 }
 
+.dropdown-wrapper {
+    position: relative;
+}
+
 #user-dropdown {
 	width: 100%;
 	max-width: 194px;
@@ -114,7 +118,7 @@ main {
 	grid-row-gap: 0.5rem;
 	position: absolute;
 	top: 45px;
-	left: 149px;
+	left: -68px;
 }
 
 #user-dropdown:before {
@@ -123,7 +127,7 @@ main {
     border-width: 11px;
     border-color: transparent transparent #ffffff transparent;
     position: absolute;
-    left: 84px;
+    left: 80px;
 	top: -21px
 }
 
@@ -447,7 +451,7 @@ table {
 	}
 }
 
-@media (max-width: 1269px) {
+@media (max-width: 1023px) {
 
 	main {
 		display: none;
